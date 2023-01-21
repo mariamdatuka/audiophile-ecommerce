@@ -11,9 +11,12 @@ export  const Container=styled.div`
 
 export const NavItems=styled.div`
     display:flex;
-    gap:10px;
+    gap:30px;
 
     & li{
         color:white;
+        list-style:none;
+        font-weight:500;
     }
 `
+
