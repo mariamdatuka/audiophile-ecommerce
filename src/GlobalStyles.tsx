@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
  body{
    font-family:'Manrope', sans-serif;
    font-size:14px;
+   background-color:#ffffff;
  }
 `
 

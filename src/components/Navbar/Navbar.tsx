@@ -2,6 +2,7 @@ import React from 'react'
 import logo from  '../../assets/shared/desktop/logo.svg';
 import cart from '../../assets/shared/desktop/icon-cart.svg'
 import { Container, NavItems } from './Styles';
+import {Outlet} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -16,7 +17,9 @@ const Navbar = () => {
      </NavItems>
      <img src={cart} alt='cart'/>
     </Container>
-  
+    <div>
+      <Outlet/>
+    </div>
     </>
   )
 }
