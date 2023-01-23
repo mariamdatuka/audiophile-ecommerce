@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom';
 
 export const Container=styled.div`
     width:350px;
@@ -34,13 +35,13 @@ export const Wrapper=styled.div`
     gap:30px;
 `
 
-export const Shop=styled.button`
+export const Shop=styled(Link)`
     display:flex;
     align-items:center;
     justify-content:center;
     gap:10px;
     width:120px;
-    border:none;
+    text-decoration:none;
     cursor:pointer;
 
  & img{

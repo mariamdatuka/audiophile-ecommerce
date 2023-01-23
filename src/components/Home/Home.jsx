@@ -1,6 +1,7 @@
 import React from 'react'
 import { Wrapper, Main } from './Styles'
 import homeimg from '../../assets/home/mobile/image-header.jpg'
+import Additional from '../Additional/Additional'
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
    <img src={homeimg} alt='homeimg'/>
  </Wrapper>
 </Main>
+<Additional/>
  </>
   )
 }

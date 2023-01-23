@@ -1,16 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar/Navbar';
+import Root from './components/Root/Root';
 import GlobalStyle from './GlobalStyles';
-import Additional from './components/Additional/Additional';
 import { createBrowserRouter,
  Route, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Navbar/>}>
+    <Route path='/' element={<Root/>}>
       <Route index element={<Home/>}/>
-      <Route path='more' element={<Additional/>}/>
     </Route>
   )
 )
@@ -20,8 +18,7 @@ function App() {
   
    <>
      <RouterProvider router={router}/>
-     <GlobalStyle/>
-     
+     <GlobalStyle/> 
    </>
   );
 }

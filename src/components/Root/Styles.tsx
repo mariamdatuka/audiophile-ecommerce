@@ -7,16 +7,25 @@ export  const Container=styled.div`
     justify-content:space-between;
     padding: 35px 150px;
     border-bottom:1px solid #ffffff;
+
+    & img{
+        cursor:pointer;
+    }
 `
 
 export const NavItems=styled.div`
     display:flex;
     gap:30px;
 
-    & li{
+    & a{
         color:white;
-        list-style:none;
         font-weight:500;
+        text-decoration:none;
+        transition:all 0.3s ease-in-out;
+    }
+
+    & a:hover{
+        color:#D87D4A;
     }
 `
 
