@@ -2,27 +2,27 @@ import React from 'react'
 import { Wrapper, Main } from './Styles'
 import homeimg from '../../assets/home/mobile/image-header.jpg'
 import Additional from '../Additional/Additional'
-
-
+import Homepage from './Homepage/Homepage'
 
 const Home = () => {
   return (
     <>
 <Main>
-<Wrapper>
+  <Wrapper>
    <div style={{display:'flex', flexDirection:'column', gap:'20px'}}>
-    <span>NEW PRODUCT</span>
-    <h1>XX99 Mark II <br/>
+     <span>NEW PRODUCT</span>
+     <h1>XX99 Mark II <br/>
    Headphones</h1>
-   <p>Experience natural, lifelike audio and exceptional <br/>
+    <p>Experience natural, lifelike audio and exceptional <br/>
    build quality made for the passionate music  <br/>
    enthusiast.</p>
-   <button>SEE PRODUCT</button>
+    <button>SEE PRODUCT</button>
    </div>
-   <img src={homeimg} alt='homeimg'/>
+  <img src={homeimg} alt='homeimg'/>
  </Wrapper>
 </Main>
 <Additional/>
+<Homepage/>
  </>
   )
 }
