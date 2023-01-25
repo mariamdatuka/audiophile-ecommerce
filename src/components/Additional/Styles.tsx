@@ -28,7 +28,6 @@ export const Container=styled.div`
 `
 
 export const Wrapper=styled.div`
-    margin:150px 170px;
     display:flex;
     align-items:center;
     justify-content:center;

@@ -4,6 +4,7 @@ import Speaker2 from '../../../assets/home/desktop/image-speaker-zx7.jpg';
 export const Wrapper=styled.div`
     background-color:#D87D4A;
     margin:0 170px;
+    margin-top:100px;
     border-radius:8px;
     height:560px;
     display:flex;

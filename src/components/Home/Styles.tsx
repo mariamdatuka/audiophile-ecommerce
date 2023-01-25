@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const Main=styled.div`
-    background-color:rgb(25, 25, 25);
+    background-color:rgb(19, 19, 19);
+    margin-bottom:150px;
 `
 
 export const Wrapper=styled.div`
@@ -33,17 +34,20 @@ export const Wrapper=styled.div`
     line-height:1.5;
    }
 
-   & button{
+   & a{
     width:160px;
     height:45px;
     color:#ffffff;
     background-color:#D87D4A;
-    border:none;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     cursor:pointer;
     transition: all 0.3s ease-in-out;
    }
 
-   & button:hover{
+   & a:hover{
     opacity: 0.75;
    }
 `

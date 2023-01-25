@@ -1,8 +1,9 @@
 import React from 'react'
 import { Wrapper, Main } from './Styles'
-import homeimg from '../../assets/home/mobile/image-header.jpg'
+import homeimg from '../../assets/im78.png'
 import Additional from '../Additional/Additional'
 import Homepage from './Homepage/Homepage'
+import {Link} from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
     <p>Experience natural, lifelike audio and exceptional <br/>
    build quality made for the passionate music  <br/>
    enthusiast.</p>
-    <button>SEE PRODUCT</button>
+    <Link to='headphones/features'>SEE PRODUCT</Link>
    </div>
   <img src={homeimg} alt='homeimg'/>
  </Wrapper>
