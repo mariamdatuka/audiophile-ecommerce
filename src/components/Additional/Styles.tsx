@@ -35,6 +35,7 @@ export const Wrapper=styled.div`
 `
 
 export const Shop=styled(Link)`
+    margin-left:0;
     display:flex;
     align-items:center;
     justify-content:center;

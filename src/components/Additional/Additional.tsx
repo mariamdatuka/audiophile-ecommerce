@@ -12,7 +12,7 @@ const Additional = () => {
     <Container>
         <img src={speaker} alt='shadow'/>
         <h4>HEADPHONES</h4>
-        <Shop to='/'>
+        <Shop to='/headphones/markone'>
             <p>SHOP</p>
               <img src={arrow} alt='arrow'/>
            </Shop>
@@ -20,7 +20,7 @@ const Additional = () => {
     <Container>
         <img src={earphone} alt='shadow'/>
         <h4>SPEAKERS</h4>
-        <Shop to='/'>
+        <Shop to='/speakers/zx9'>
             <p>SHOP</p>
               <img src={arrow} alt='arrow'/>
            </Shop>
@@ -28,7 +28,7 @@ const Additional = () => {
     <Container>
         <img src={circles} alt='shadow'/>
         <h4>EARPHONES</h4>
-        <Shop to='/'>
+        <Shop to='earphones/features'>
             <p>SHOP</p>
               <img src={arrow} alt='arrow'/>
            </Shop>
