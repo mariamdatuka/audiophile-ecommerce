@@ -1,33 +1,33 @@
 import React from 'react'
-import im2 from '../../assets/im2.png';
 import {Wrapper, ImgBox, WrapperTwo, Info, WrapperThree, Decrement, Increment, Add, Feature, Items,
-WrapperFour,InfoBox, Img, Gallery, GridItem, Grid} from './Styles'
+    WrapperFour,InfoBox, Img, Gallery, GridItem, Grid} from './Styles'
 import Additional from '../Additional/Additional';
 import Audios from '../Audio/Audios';
 import Data from '../../data.json'
-import ph1 from '../../assets/ph1.png'
-import ph2 from '../../assets/ph2.png'
-import ph3 from '../../assets/ph3.png'
+import ph1 from '../../assets/speaker3.png'
+import ph2 from '../../assets/speaker2.png'
+import ph3 from '../../assets/speaker1.png'
 import im1 from '../../assets/im.png';
-import im4 from '../../assets/im3.png';
+import im5 from '../../assets/im2.png';
+import im4 from '../../assets/im5.png';
 import im3 from '../../assets/im4.png';
 import {Link} from 'react-router-dom';
 
-const MarkOne = () => {
+const Zx7 = () => {
 
-  const info=(Data[1]);
+    const info=(Data[4]);
+
   return (
     <>
-     <Wrapper>
+    <Wrapper>
       <WrapperTwo>
         <ImgBox>
-          <img src={im2} alt='img'/>
+          <img src={im4} alt='img'/>
        </ImgBox>
       <Info>
-          <h5>NEW PRODUCT</h5>
-          <h1>XX99 Mark I <br/>
-           Headphones</h1>
-          <p>The new XX99 Mark II headphones is the pinnacle of pristine <br/> audio. It redefines your premium headphone experience by <br/>reproducing the balanced depth and precision of studio-quality <br/> sound.</p>
+          <h1>ZX7 <br/>
+           SPEAKER</h1>
+          <p>Upgrade your sound system with the all new ZX9 active <br/> speaker. It’s a bookshelf speaker system that offers truly <br/> wireless connectivity -- creating new possibilities for more <br/>pleasing and practical audio setups.</p>
           <h6>$ {info.price}</h6>
           <WrapperThree>
             <div>
@@ -73,10 +73,10 @@ const MarkOne = () => {
     </WrapperFour>
       <Gallery>
        <div>
-          <img src={ph1} alt='photo1'/>
+          <img src={ph3} alt='photo1'/>
           <img src={ph2} alt='photo2'/>
        </div>
-      <Img src={ph3} alt='photo3'/>
+      <Img src={ph1} alt='photo3'/>
     </Gallery>
     <h1>YOU MAY ALSO LIKE</h1>
     <Grid>
@@ -85,21 +85,21 @@ const MarkOne = () => {
            <img src={im1} alt='im1'/>
          </div>
          <h4>XX99 MARK II</h4>
-         <Link to='/'>SEE PRODUCT</Link>
+         <Link to='/headphones/features'>SEE PRODUCT</Link>
       </GridItem>
       <GridItem>
          <div>
-           <img src={im4} alt='im1'/>
+           <img src={im5} alt='im1'/>
          </div>
-         <h4>XX59</h4>
-         <Link to='/'>SEE PRODUCT</Link>
+         <h4>XX99 MARK I</h4>
+         <Link to='/headphones/markone'>SEE PRODUCT</Link>
       </GridItem>
       <GridItem>
          <div>
            <img src={im3} alt='im1'/>
          </div>
          <h4>ZX9 SPEAKER</h4>
-         <Link to='/'>SEE PRODUCT</Link>
+         <Link to='/speakers/zx9'>SEE PRODUCT</Link>
       </GridItem>   
     </Grid>
     <Additional/>
@@ -109,4 +109,4 @@ const MarkOne = () => {
   )
 }
 
-export default MarkOne
+export default Zx7

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Wrapper,WrapperTwo, ImgBox, Info,Audio, Add, WrapperThree, Decrement, Increment,
   WrapperFour, Feature,InfoBox, Items, Gallery, Img} from './Styles';
 import data from '../../../data.json';
@@ -9,10 +9,34 @@ import ear from '../../../assets/im.png';
 import man from '../../../assets/shared/desktop/image-best-gear.jpg';
 import More from '../../More/More';
 import Additional from '../../Additional/Additional';
+import Cart from '../../Cart/Cart';
 
 
 const Features = () => {
-  const info=(data[1]);
+  const [quantity, setQuantity]=useState<number>(0);
+  const[error,setError]=useState<boolean>(false);
+  const [isOpen, setIsOpen]=useState<boolean>(false);
+
+  const increment=()=>{
+    if(quantity>=5){
+      setError(true);
+      return;
+    } else{
+      setQuantity((count)=>count+1);
+    }
+  }
+
+  const decrement=()=>{
+    if(quantity>0){
+      setQuantity((count)=>count-1);
+      setError(false);
+    }else if (quantity===0)
+    return;
+  }
+
+  const info=(data[3]);
+  const quan=quantity*(info.price);
+  console.log(quan);
 
   return (
     <>
@@ -26,16 +50,16 @@ const Features = () => {
           <h1>XX99 Mark II <br/>
            Headphones</h1>
           <p>The new XX99 Mark II headphones is the pinnacle of pristine <br/> audio. It redefines your premium headphone experience by <br/>reproducing the balanced depth and precision of studio-quality <br/> sound.</p>
-          <h6>$ 2,999</h6>
+          <h6>$ {info.price}</h6>
           <WrapperThree>
             <div>
-             <Decrement>-</Decrement>
-             <span>1</span>
-             <Increment>+</Increment>
+             <Decrement onClick={decrement}>-</Decrement>
+             <span>{quantity}</span>
+             <Increment onClick={increment}>+</Increment>
             </div>
-            <Add>ADD TO CART</Add>
+            <Add onClick={()=>setIsOpen(!isOpen)}>ADD TO CART</Add>
           </WrapperThree>
-          
+          {error&&<span style={{color:'red'}}>can not order more than 5</span>}
          </Info>
        </WrapperTwo>
        <WrapperFour>
@@ -86,8 +110,8 @@ const Features = () => {
       </div>
       <img src={man} alt='man'/>
     </Audio>
+    <Cart isOpen={isOpen} setIsOpen={setIsOpen}/>
      </Wrapper>
-     
     </>
   )
 }

@@ -24,7 +24,7 @@ const More = () => {
            <img src={im2} alt='im1'/>
          </div>
          <h4>XX59</h4>
-         <Link to='/'>SEE PRODUCT</Link>
+         <Link to='/xx59headphone'>SEE PRODUCT</Link>
       </GridItem>
       <GridItem>
          <div>

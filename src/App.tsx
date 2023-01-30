@@ -11,6 +11,8 @@ import Features from './components/Headphones/Features/Features';
 import EarphoneFeat from './components/Earphones/EarphoneFeat/EarphoneFeat';
 import MarkOne from './components/MarkOne/MarkOne';
 import Zx9 from './components/Zx9/Zx9';
+import WhiteHeadphone from './components/WhiteHeadphone.tsx/WhiteHeadphone';
+import Zx7 from './components/Zx7/Zx7';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
@@ -22,7 +24,9 @@ const router=createBrowserRouter(
       <Route path='speakers' element={<Speakers/>}/>
       <Route path='speakers/zx9' element={<Zx9/>}/>
       <Route path='earphones' element={<Earphones/>}/>
-      <Route path='earphones/features' element={<EarphoneFeat/>}/>
+      <Route path='earphones/yx1' element={<EarphoneFeat/>}/>
+      <Route path='/xx59headphone' element={<WhiteHeadphone/>}/>
+      <Route path='/speakers/zx7' element={<Zx7/>}/>
     </Route>
   )
 )

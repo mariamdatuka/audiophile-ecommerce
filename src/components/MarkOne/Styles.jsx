@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper=styled.div`
 margin:0 150px;
@@ -145,14 +145,11 @@ export const Gallery=styled.div`
         flex-direction:column;
         gap:20px;
     }
-    & div img{
-        width:350px;
-    }
    
 `
 export const Img=styled.img`
-    height:480px;
-    width:500px;
+    height:580px;
+    width:600px;
 `
 
 export const Grid=styled.div`

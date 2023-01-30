@@ -24,17 +24,17 @@ const Headphones = () => {
       <Info>
         <span>NEW PRODUCT</span>
         <h1>XX99 Mark II <br/>
-           Headphones</h1>
+           HEADPHONES</h1>
         <p>The new XX99 Mark II headphones is the pinnacle of pristine <br/> audio. It redefines your premium headphone experience by <br/>reproducing the balanced depth and precision of studio-quality <br/> sound.</p>
-        <Link to='/'>SEE PRODUCT</Link>
+        <Link to='/headphones/features'>SEE PRODUCT</Link>
       </Info>
     </WrapperTwo>
     <WrapperTwo>
       <Info>
-        <h1>XX99 Mark II <br/>
-           Headphones</h1>
+        <h1>XX99 Mark I <br/>
+           HEADPHONES</h1>
         <p>The new XX99 Mark II headphones is the pinnacle of pristine <br/> audio. It redefines your premium headphone experience by <br/>reproducing the balanced depth and precision of studio-quality <br/> sound.</p>
-        <Link to='/'>SEE PRODUCT</Link>
+        <Link to='/headphones/markone'>SEE PRODUCT</Link>
       </Info>
       <ImgBox>
         <img src={ear1} alt='ear'/>
@@ -46,10 +46,10 @@ const Headphones = () => {
       </ImgBox>
       <Info>
         <span>NEW PRODUCT</span>
-        <h1>XX99 Mark II <br/>
-           Headphones</h1>
+        <h1>XX59<br/>
+           HEADPHONES</h1>
         <p>Enjoy your audio almost anywhere and customize it to your <br/> specific tastes with the XX59 headphones. The stylish yet <br/>durable versatile wireless headset is a brilliant companion at <br/>home or on the move.</p>
-        <Link to='/'>SEE PRODUCT</Link>
+        <Link to='/XX59headphone'>SEE PRODUCT</Link>
       </Info>
     </WrapperTwo>
     <Additional/>

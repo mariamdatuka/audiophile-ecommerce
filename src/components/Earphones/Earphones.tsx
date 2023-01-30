@@ -22,7 +22,7 @@ const Earphones = () => {
            <br/>
           EARPHONES</h1>
         <p>Tailor your listening experience with bespoke dynamic drivers <br/>from the new YX1 Wireless Earphones. Enjoy incredible <br/> high-fidelity sound even in noisy environments with its active <br/>noise cancellation feature.</p>
-        <Link to='/'>SEE PRODUCT</Link>
+        <Link to='/earphones/yx1'>SEE PRODUCT</Link>
       </Info>
     </WrapperTwo>
     <Additional/>

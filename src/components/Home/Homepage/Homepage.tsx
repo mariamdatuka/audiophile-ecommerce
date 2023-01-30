@@ -17,18 +17,18 @@ const Homepage = () => {
       <Info>
         <h1>ZX9 <br/> SPEAKER</h1>
         <p>Upgrade to premium speakers that are <br/>phenomenally built to deliver truly remarkable <br/> sound.</p>
-        <Link to='/'>SEE PRODUCT</Link>
+        <Link to='/speakers/zx9'>SEE PRODUCT</Link>
       </Info>
     </Wrapper>
     <Speaker>
       <h2>ZX7 SPEAKER</h2>
-      <Link to='/'>SEE PRODUCT</Link>
+      <Link to='/speakers/zx7'>SEE PRODUCT</Link>
     </Speaker>
     <Earphone>
        <img src={earphone} alt='earphone'/>
        <Box>
           <h3>YX1 EARPHONES</h3>
-          <Link to='/'>SEE PRODUCT</Link>
+          <Link to='/earphones/yx1'>SEE PRODUCT</Link>
        </Box>
     </Earphone>
     <Audio>

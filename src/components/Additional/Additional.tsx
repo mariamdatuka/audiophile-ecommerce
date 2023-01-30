@@ -28,7 +28,7 @@ const Additional = () => {
     <Container>
         <img src={circles} alt='shadow'/>
         <h4>EARPHONES</h4>
-        <Shop to='earphones/features'>
+        <Shop to='/earphones/yx1'>
             <p>SHOP</p>
               <img src={arrow} alt='arrow'/>
            </Shop>
