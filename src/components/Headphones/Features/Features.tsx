@@ -9,13 +9,21 @@ import ear from '../../../assets/im.png';
 import man from '../../../assets/shared/desktop/image-best-gear.jpg';
 import More from '../../More/More';
 import Additional from '../../Additional/Additional';
-import Cart from '../../Cart/Cart';
+import { useSelector, useDispatch } from 'react-redux';
+import { Types } from '../../../Slices/CartSlice';
+import { cartActions } from '../../../Slices/CartSlice';
 
 
 const Features = () => {
   const [quantity, setQuantity]=useState<number>(0);
   const[error,setError]=useState<boolean>(false);
-  const [isOpen, setIsOpen]=useState<boolean>(false);
+
+
+const dispatch=useDispatch();
+
+const addCart=()=>{
+  dispatch(cartActions.addToCart(quantity))
+}
 
   const increment=()=>{
     if(quantity>=5){
@@ -57,7 +65,7 @@ const Features = () => {
              <span>{quantity}</span>
              <Increment onClick={increment}>+</Increment>
             </div>
-            <Add onClick={()=>setIsOpen(!isOpen)}>ADD TO CART</Add>
+            <Add onClick={addCart}>ADD TO CART</Add>
           </WrapperThree>
           {error&&<span style={{color:'red'}}>can not order more than 5</span>}
          </Info>
@@ -110,7 +118,6 @@ const Features = () => {
       </div>
       <img src={man} alt='man'/>
     </Audio>
-    <Cart isOpen={isOpen} setIsOpen={setIsOpen}/>
      </Wrapper>
     </>
   )

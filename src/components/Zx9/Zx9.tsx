@@ -108,4 +108,4 @@ const Zx9 = () => {
   )
 }
 
-export default Zx9
+export default Zx9;
